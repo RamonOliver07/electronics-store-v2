@@ -1,0 +1,107 @@
+EletroStore: Loja Virtual com Quarkus e React
+Este é um projeto de e-commerce completo, desenvolvido para demonstrar a integração de um backend robusto com um frontend moderno. A aplicação simula as funcionalidades de uma loja virtual de eletrônicos, implementando casos de uso como gerenciamento de produtos, carrinho de compras e autenticação de usuários.
+
+A arquitetura segue os padrões de uma API REST desacoplada no backend e uma Single-Page Application (SPA) no frontend, utilizando DTOs para toda a comunicação, garantindo segurança e estabilidade.
+
+⚠️ Aviso Importante sobre o Ambiente
+Este projeto foi especificamente configurado para garantir a compatibilidade com um ambiente de desenvolvimento mais antigo (macOS Sierra). Como resultado, as versões das principais tecnologias foram cuidadosamente selecionadas e podem não corresponder às versões mais recentes.
+
+✨ Funcionalidades Principais
+Autenticação Segura: Sistema de login com e-mail/senha e geração de tokens JWT.
+
+Controle de Acesso: Perfis de usuário USER e ADMIN com permissões distintas.
+
+Gerenciamento de Produtos: (Para Admins) Funcionalidades de criar, ler, atualizar e deletar produtos.
+
+Catálogo de Produtos: Visualização de produtos com busca e filtragem para todos os usuários.
+
+Carrinho de Compras: Adição e gerenciamento de itens no carrinho.
+
+Gerenciamento de Pedidos: Acompanhamento de pedidos para usuários e gerenciamento para administradores.
+
+Design Responsivo: Interface adaptável construída com Tailwind CSS.
+
+🛠️ Tecnologias Utilizadas
+Esta é a pilha de tecnologias específica que está configurada e funcionando neste projeto:
+
+Backend (Quarkus)
+Java: 17
+
+Quarkus: 2.16.12.Final
+
+Maven: 3.6.3
+
+Arquitetura: Model-Resource-Service (DAO, BO, DTO)
+
+Frontend (React)
+Node.js: 12.22.12
+
+npm: 6.14.x
+
+Vite: 2.6.14
+
+React: 17.0.2
+
+React Router: 5.3.0
+
+Tailwind CSS: 2.2.19
+
+TypeScript
+
+⚙️ Pré-requisitos
+Antes de começar, garanta que você tem as seguintes ferramentas instaladas nas versões corretas. O uso de uma ferramenta como o SDKMAN! é altamente recomendado.
+
+Java 17
+
+Maven 3.6.3
+
+Node.js 12.22.12
+
+🚀 Configuração e Instalação
+Clone o repositório:
+
+git clone [URL_DO_SEU_REPOSITORIO_AQUI]
+
+Navegue até a pasta do projeto:
+
+cd ecommerce-2
+
+Instale as dependências do Frontend:
+
+npm install
+
+▶️ Executando a Aplicação
+Para a aplicação funcionar completamente, você precisará ter dois terminais abertos simultaneamente.
+
+Terminal 1 - Executando o Backend (Quarkus)
+Navegue até a pasta do projeto.
+
+Execute o comando do Maven:
+
+mvn clean quarkus:dev
+
+O backend estará rodando em http://localhost:8080.
+
+Terminal 2 - Executando o Frontend (Vite)
+Abra um novo terminal e navegue até a mesma pasta do projeto.
+
+Execute o comando do npm:
+
+npm run dev
+
+A interface do site estará acessível em http://localhost:3000.
+
+👤 Contas de Demonstração
+O sistema é iniciado com duas contas de teste para facilitar a avaliação:
+
+Administrador:
+
+E-mail: admin@ecommerce.com
+
+Senha: admin123
+
+Usuário Comum:
+
+E-mail: user@ecommerce.com
+
+Senha: user123
